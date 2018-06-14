@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liangtj.github.io/"/>
-  <updated>2018-06-14T03:27:27.533Z</updated>
+  <updated>2018-06-14T03:31:55.199Z</updated>
   <id>https://liangtj.github.io/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>vmware虚拟机三种网络模式</title>
-    <link href="https://liangtj.github.io/uncategorized/vmware-network/"/>
-    <id>https://liangtj.github.io/uncategorized/vmware-network/</id>
+    <link href="https://liangtj.github.io/network/vmware-network/"/>
+    <id>https://liangtj.github.io/network/vmware-network/</id>
     <published>2018-06-13T11:41:01.000Z</published>
-    <updated>2018-06-14T03:27:27.533Z</updated>
+    <updated>2018-06-14T03:31:55.199Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><blockquote><p>安装vmware虚拟机后，宿主机默认会额外生成两个虚拟网卡—-<strong>VMnet1</strong>和<strong>VMnet8</strong>。VMnet1是用于host模式下主机接入VMnet1网段时，直接和虚拟机通讯的网卡，而VMnet8是NAT模式下，主机接入VMnet8网段时，直接和虚拟机通讯的网卡。</p></blockquote><h2 id="bridge（桥接模式）"><a href="#bridge（桥接模式）" class="headerlink" title="bridge（桥接模式）"></a>bridge（桥接模式）</h2><p>&emsp;&emsp;在这种模式下，使用VMnet0交换机直接把宿主机，虚拟机联系起来，一起接入LAN。在这种情况下，虚拟机和宿主机处于同等地位，相当于LAN内的独立机器，因此也具有同网段IP。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;虚拟机可以和LAN内任何主机进行联系，方便虚拟机对外提供服务</p><h2 id="NAT（网络地址转换模式）"><a href="#NAT（网络地址转换模式）" class="headerlink" title="NAT（网络地址转换模式）"></a>NAT（网络地址转换模式）</h2><p>&emsp;&emsp;在这种模式下，会额外生成NAT路由器，把宿主机一端，路由器一端和虚拟机都接入到VMnet8网段中，宿主机和路由器另一端接入到LAN。</p><h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;配置简单，由于VMnet8网段内存在DHCP，可以自动分配IP，不用我们手动操劳，因此只要宿主机有接入互联网，即可联网。<br>&emsp;&emsp;节省LAN内的IP，尤其是当IP紧张时候</p><h2 id="host-only（主机模式）"><a href="#host-only（主机模式）" class="headerlink" title="host-only（主机模式）"></a>host-only（主机模式）</h2><p>&emsp;&emsp;该模式下，虚拟机只能和虚拟机，宿主机互访，虚拟机和外网完全隔离。内网也存在DHCP，虚拟机可以自动获取IP</p><h3 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;网络隔离，安全。但是普通人可能用不上这个特性</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><blockquote><p>安装vmware虚拟机后，宿主机默认会额外生成两个虚拟网卡—-<strong>VMnet1</strong>和<strong>VMnet8</strong>。VMnet1是用于host模式下主机接入VMnet1网段时，直接和虚拟机通讯的网卡，而VMnet8是NAT模式下，主机接入VMnet8网段时，直接和虚拟机通讯的网卡。</p></blockquote><h2 id="bridge（桥接模式）"><a href="#bridge（桥接模式）" class="headerlink" title="bridge（桥接模式）"></a>bridge（桥接模式）</h2><img src="/network/vmware-network/桥接模式.png" title="桥接模式"><p>&emsp;&emsp;在这种模式下，使用VMnet0交换机直接把宿主机，虚拟机联系起来，一起接入LAN。在这种情况下，虚拟机和宿主机处于同等地位，相当于LAN内的独立机器，因此也具有同网段IP。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;虚拟机可以和LAN内任何主机进行联系，方便虚拟机对外提供服务</p><h2 id="NAT（网络地址转换模式）"><a href="#NAT（网络地址转换模式）" class="headerlink" title="NAT（网络地址转换模式）"></a>NAT（网络地址转换模式）</h2><img src="/network/vmware-network/nat模式.png" title="nat模式"><p>&emsp;&emsp;在这种模式下，会额外生成NAT路由器，把宿主机一端，路由器一端和虚拟机都接入到VMnet8网段中，宿主机和路由器另一端接入到LAN。</p><h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;配置简单，由于VMnet8网段内存在DHCP，可以自动分配IP，不用我们手动操劳，因此只要宿主机有接入互联网，即可联网。<br>&emsp;&emsp;节省LAN内的IP，尤其是当IP紧张时候</p><h2 id="host-only（主机模式）"><a href="#host-only（主机模式）" class="headerlink" title="host-only（主机模式）"></a>host-only（主机模式）</h2><img src="/network/vmware-network/主机模式.png" title="主机模式"><p>&emsp;&emsp;该模式下，虚拟机只能和虚拟机，宿主机互访，虚拟机和外网完全隔离。内网也存在DHCP，虚拟机可以自动获取IP</p><h3 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a>优点</h3><p>&emsp;&emsp;网络隔离，安全。但是普通人可能用不上这个特性</p>]]></content>
     
     <summary type="html">
     
@@ -34,6 +34,8 @@
       
     
     </summary>
+    
+      <category term="network" scheme="https://liangtj.github.io/categories/network/"/>
     
     
       <category term="network" scheme="https://liangtj.github.io/tags/network/"/>

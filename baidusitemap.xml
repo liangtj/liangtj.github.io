@@ -4,8 +4,8 @@
 
     
   <url>
-    <loc>https://liangtj.github.io/uncategorized/vmware-network/</loc>
-    <lastmod>2018-06-14T03:27:27.533Z</lastmod>
+    <loc>https://liangtj.github.io/network/vmware-network/</loc>
+    <lastmod>2018-06-14T03:31:55.199Z</lastmod>
     <data>
         <display>
         <title>vmware虚拟机三种网络模式</title>
@@ -17,6 +17,9 @@
          
          
            
+             
+              <breadCrumb title="network" url="https://liangtj.github.io/categories/network/"/>
+          
         </display>
     </data>
     </url>

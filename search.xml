@@ -2,8 +2,11 @@
 <search>
   <entry>
     <title><![CDATA[vmware虚拟机三种网络模式]]></title>
-    <url>%2Funcategorized%2Fvmware-network%2F</url>
+    <url>%2Fnetwork%2Fvmware-network%2F</url>
     <content type="text"><![CDATA[概述 安装vmware虚拟机后，宿主机默认会额外生成两个虚拟网卡—-VMnet1和VMnet8。VMnet1是用于host模式下主机接入VMnet1网段时，直接和虚拟机通讯的网卡，而VMnet8是NAT模式下，主机接入VMnet8网段时，直接和虚拟机通讯的网卡。 bridge（桥接模式） &emsp;&emsp;在这种模式下，使用VMnet0交换机直接把宿主机，虚拟机联系起来，一起接入LAN。在这种情况下，虚拟机和宿主机处于同等地位，相当于LAN内的独立机器，因此也具有同网段IP。 优点&emsp;&emsp;虚拟机可以和LAN内任何主机进行联系，方便虚拟机对外提供服务 NAT（网络地址转换模式） &emsp;&emsp;在这种模式下，会额外生成NAT路由器，把宿主机一端，路由器一端和虚拟机都接入到VMnet8网段中，宿主机和路由器另一端接入到LAN。 优点&emsp;&emsp;配置简单，由于VMnet8网段内存在DHCP，可以自动分配IP，不用我们手动操劳，因此只要宿主机有接入互联网，即可联网。&emsp;&emsp;节省LAN内的IP，尤其是当IP紧张时候 host-only（主机模式） &emsp;&emsp;该模式下，虚拟机只能和虚拟机，宿主机互访，虚拟机和外网完全隔离。内网也存在DHCP，虚拟机可以自动获取IP 优点&emsp;&emsp;网络隔离，安全。但是普通人可能用不上这个特性]]></content>
+      <categories>
+        <category>network</category>
+      </categories>
       <tags>
         <tag>network</tag>
         <tag>vmware</tag>
