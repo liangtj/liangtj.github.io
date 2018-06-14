@@ -4,12 +4,55 @@
 
     
   <url>
+    <loc>https://liangtj.github.io/uncategorized/vmware-network/</loc>
+    <lastmod>2018-06-14T03:27:27.533Z</lastmod>
+    <data>
+        <display>
+        <title>vmware虚拟机三种网络模式</title>
+        <pubTime>2018-06-13T11:41:01.000Z</pubTime>
+        
+        <tag>network</tag>
+         
+        <tag>vmware</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://liangtj.github.io/ACG/Land-of-the-Lustrous/</loc>
+    <lastmod>2018-06-14T02:58:21.507Z</lastmod>
+    <data>
+        <display>
+        <title>宝石之国</title>
+        <pubTime>2018-02-01T15:30:25.000Z</pubTime>
+        
+        <tag>ACG</tag>
+         
+        <tag>宝石之国</tag>
+         
+        <tag>宝石</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACG" url="https://liangtj.github.io/categories/ACG/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://liangtj.github.io/japanese-language/conjugations/</loc>
     <lastmod>2018-06-13T16:37:08.442Z</lastmod>
     <data>
         <display>
         <title>日语动词变形总结</title>
-        <pubTime>2018-01-31T12:27:12.000Z</pubTime>
+        <pubTime>2018-01-30T20:27:12.000Z</pubTime>
         
         <tag>日本語</tag>
          
@@ -27,28 +70,4 @@
     
     
     
-    
-  <url>
-    <loc>https://liangtj.github.io/ACG/Land-of-the-Lustrous/</loc>
-    <lastmod>2018-06-13T16:37:08.438Z</lastmod>
-    <data>
-        <display>
-        <title>宝石之国</title>
-        <pubTime>2018-02-02T07:30:25.000Z</pubTime>
-        
-        <tag>ACG</tag>
-         
-        <tag>宝石之国</tag>
-         
-        <tag>宝石</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACG" url="https://liangtj.github.io/categories/ACG/"/>
-          
-        </display>
-    </data>
-    </url>
-
 </urlset>
